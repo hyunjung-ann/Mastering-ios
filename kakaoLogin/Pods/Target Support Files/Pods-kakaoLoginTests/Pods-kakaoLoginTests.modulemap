@@ -1,0 +1,6 @@
+framework module Pods_kakaoLoginTests {
+  umbrella header "Pods-kakaoLoginTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
