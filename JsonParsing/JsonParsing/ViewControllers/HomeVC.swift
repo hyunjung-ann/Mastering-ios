@@ -31,6 +31,63 @@ class HomeVC: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate
         self.config()
  
     }
+    
+    // 화면이 넘어가기 전에 준비한다.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("HomeVC - prepare() called / segue.identifier : \(segue.identifier)")
+        
+        switch segue.identifier {
+        case SEGUE_ID.USER_LIST_VC :
+            // 다음 화면의 뷰컨트롤러를 가져오다
+            let nextVC = segue.destination as! UserListVC
+            
+            //사용자가 입력한 부분dls searchBar text 언랩핑, 값이 없다면 return
+            guard let userInputValue = self.searchBar.text else {return}
+            
+            //nextVC의 vcTitle에 접근
+            nextVC.vcTitle = userInputValue +  "🙍🏻‍♀️"
+        
+        case SEGUE_ID.PHOTO_COLLECTION_VC :
+            // 다음 화면의 뷰컨트롤러를 가져오다
+            let nextVC = segue.destination as! PhotoCollectionVC
+            
+            //사용자가 입력한 부분인 searchBar text 언랩핑, 값이 없다면 return
+            guard let userInputValue = self.searchBar.text else {return}
+            
+            //nextVC의 vcTitle에 접근
+            nextVC.vcTitle = userInputValue +  "🥸"
+            
+        default:
+            print("default")
+        }
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("HomeVC - ViewDidAppear() called")
+        self.searchBar.becomeFirstResponder() //포커싱 주기
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print("HomeVC - Viewwillapper() called")
+        
+        //키보드 올라가는 이벤트를 받는 처리
+        //키보드 노티 등록
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShowHandle(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+       
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("HomeVC - viewWillDisappear() called")
+        
+        //키보드 노티 해제
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
 
     
     //MARK: - FilePrivate methods
@@ -49,7 +106,7 @@ class HomeVC: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate
         // 제스처 추가하기
         self.view.addGestureRecognizer(keyboardDismissTabGesture)
         
-        self.searchBar.becomeFirstResponder() //포커싱 주기
+
     }
     
     
@@ -72,6 +129,37 @@ class HomeVC: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate
         // segue 화면 이동
         self.performSegue(withIdentifier: segueId, sender: self) //self: HomeVC (에서 이동한다는 말)
         
+    }
+    
+    //키보드가 해당하는 뷰를 덮었으면 처리
+    @objc func keyboardWillShowHandle(notification: NSNotification) {
+        print("HomeVC - keyboardWillShowHandle() Called")
+
+        //키보드 사이즈 가져오기
+        
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            
+            print("keyboardSize : \(keyboardSize.height)")
+            print("searchBtn.frame.origin.y: \(searchBtn.frame.origin.y)")
+            
+            if(keyboardSize.height < searchBtn.frame.origin.y)  { //키보드가 버튼 높이를 덮는다면,
+                print("키보드가 버튼을 덮었다")
+                
+                let distance = keyboardSize.height - searchBtn.frame.origin.y
+                print("이만큼 덮었다 distance = \(distance)")
+               self.view.frame.origin.y = distance + searchBtn.frame.height
+            }
+            
+       
+        }
+        
+        //self.view.frame.origin.y = -100
+        
+    }
+    
+    @objc func keyboardWillHide() {
+        print("HomeVC - keyboardWillHide() Called")
+        self.view.frame.origin.y = 0
     }
     
     
@@ -144,7 +232,7 @@ class HomeVC: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate
   
     }
     
-    
+     
     
     // 글자가 입력될 때
     func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {

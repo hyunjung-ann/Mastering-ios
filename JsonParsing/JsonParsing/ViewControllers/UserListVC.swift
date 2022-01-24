@@ -7,14 +7,8 @@
 
 import UIKit
 
-class UserListVC: UIViewController {
+class UserListVC: BaseVC {
     
-    var vcTitle: String = ""  {
-        didSet { //나중에 vctitle에 값이 설정된다면, didset 발동
-            print("userlistVC - Vctitle didset() called / vcTitle: \(vcTitle)")
-            self.title = vcTitle + "🙍🏻‍♀️" //UserListVC에 있는 title이 설정된 값으로 바로 연동됨
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
