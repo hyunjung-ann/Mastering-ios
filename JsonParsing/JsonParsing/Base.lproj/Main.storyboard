@@ -92,7 +92,7 @@
                     <connections>
                         <outlet property="searchBar" destination="986-eY-dQh" id="WAv-7b-vLa"/>
                         <outlet property="searchBtn" destination="Ioq-Qi-mVM" id="fFd-05-dbR"/>
-                        <outlet property="searchFilterSegment" destination="XjW-bo-4o1" id="mVc-3n-DZc"/>
+                        <outlet property="searchFilterSegment" destination="XjW-bo-4o1" id="tBu-xy-ABr"/>
                         <outlet property="searchIndicator" destination="Ub0-sn-Qgi" id="EQC-wQ-Mba"/>
                         <segue destination="0VX-ws-497" kind="show" identifier="goPhotoCollectionVC" id="kTS-af-bYo"/>
                         <segue destination="DMV-VA-AI8" kind="show" identifier="goUserListVC" id="FOS-yR-XIQ"/>

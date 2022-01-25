@@ -4,9 +4,11 @@
 target 'JsonParsing' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+ 
   # Pods for JsonParsing
   pod 'Toast-Swift', '~> 5.0.1'
+  pod 'Alamofire', '~> 5.5'
+
 
   target 'JsonParsingTests' do
     inherit! :search_paths

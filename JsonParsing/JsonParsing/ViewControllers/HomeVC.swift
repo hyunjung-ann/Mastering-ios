@@ -8,6 +8,7 @@
 
 import UIKit
 import Toast_Swift
+import Alamofire
 
 //UISearchBarDelegate - 검색어를 입력했을 때 감지할 수 있게함
 
@@ -167,6 +168,7 @@ class HomeVC: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate
     
     @IBAction func onSearchBtnClicked(_ sender: Any) {
         print("HomeVC - unSearchBtnClicked() called \(searchFilterSegment.selectedSegmentIndex)")
+        
         
         // 화면으로 이동
         pushVC()
