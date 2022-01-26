@@ -169,9 +169,15 @@ class HomeVC: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate
     @IBAction func onSearchBtnClicked(_ sender: Any) {
         print("HomeVC - unSearchBtnClicked() called \(searchFilterSegment.selectedSegmentIndex)")
         
+        //alamofire로 request
+        AF.request("https://api.unsplash.com/search/photos")
+            .response { response in //응답처리 
+            debugPrint(response)
+        }
+        
         
         // 화면으로 이동
-        pushVC()
+        //pushVC()
     }
   
     
