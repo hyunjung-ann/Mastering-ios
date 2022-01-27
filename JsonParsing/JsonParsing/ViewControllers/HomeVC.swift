@@ -169,11 +169,19 @@ class HomeVC: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate
     @IBAction func onSearchBtnClicked(_ sender: Any) {
         print("HomeVC - unSearchBtnClicked() called \(searchFilterSegment.selectedSegmentIndex)")
         
-        //alamofire로 request
-        AF.request("https://api.unsplash.com/search/photos")
-            .response { response in //응답처리 
-            debugPrint(response)
-        }
+        let url = API.BASE_URL + "search/photos"
+        
+        //searchBar text가 없으면 return 하겠다는 guard문
+        guard let userInput = self.searchBar.text else { return }
+    
+        // 키, 벨류 형식의 딕셔너리
+        // = 자물쇠 : 쿼리라는 키로 값이 들어감
+        let queryParam = ["query": userInput, "client_id": API.CLIENT_ID]
+        
+        AF.request(url, method: .get, parameters: queryParam)
+            .responseJSON(completionHandler: { response in //completionHandler로 들어오는 것을 response로 받는다.
+                debugPrint(response)
+        })
         
         
         // 화면으로 이동
