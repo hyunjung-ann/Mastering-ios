@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53959484BCCB3E870978BD26 /* Pods_FSCalendar_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945F49498EB7E162C9E232AF /* Pods_FSCalendar_practice.framework */; };
+		C5ADE67127A2E825006E8938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADE67027A2E825006E8938 /* AppDelegate.swift */; };
+		C5ADE67327A2E825006E8938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADE67227A2E825006E8938 /* SceneDelegate.swift */; };
+		C5ADE67527A2E825006E8938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADE67427A2E825006E8938 /* ViewController.swift */; };
+		C5ADE67827A2E825006E8938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5ADE67627A2E825006E8938 /* Main.storyboard */; };
+		C5ADE67A27A2E826006E8938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ADE67927A2E826006E8938 /* Assets.xcassets */; };
+		C5ADE67D27A2E826006E8938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5ADE67B27A2E826006E8938 /* LaunchScreen.storyboard */; };
+		C5ADE68827A2E826006E8938 /* FSCalendar_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADE68727A2E826006E8938 /* FSCalendar_practiceTests.swift */; };
+		C5ADE69227A2E826006E8938 /* FSCalendar_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADE69127A2E826006E8938 /* FSCalendar_practiceUITests.swift */; };
+		C5ADE69427A2E826006E8938 /* FSCalendar_practiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADE69327A2E826006E8938 /* FSCalendar_practiceUITestsLaunchTests.swift */; };
+		C5ADE6A127A2EB68006E8938 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADE6A027A2EB68006E8938 /* TextViewController.swift */; };
+		E4B05B841DE13C67FD4267D6 /* Pods_FSCalendar_practice_FSCalendar_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F878D94EFA57E3FF6595771D /* Pods_FSCalendar_practice_FSCalendar_practiceUITests.framework */; };
+		FEE6D937E6950CEB209E10D0 /* Pods_FSCalendar_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13442D6B82187D4B21E2D051 /* Pods_FSCalendar_practiceTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5ADE68427A2E826006E8938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5ADE66527A2E825006E8938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5ADE66C27A2E825006E8938;
+			remoteInfo = FSCalendar_practice;
+		};
+		C5ADE68E27A2E826006E8938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5ADE66527A2E825006E8938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5ADE66C27A2E825006E8938;
+			remoteInfo = FSCalendar_practice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13442D6B82187D4B21E2D051 /* Pods_FSCalendar_practiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCalendar_practiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		174A11A5CD0276C0072B8ECA /* Pods-FSCalendar_practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendar_practice.release.xcconfig"; path = "Target Support Files/Pods-FSCalendar_practice/Pods-FSCalendar_practice.release.xcconfig"; sourceTree = "<group>"; };
+		32876DB2C4E7A8502E0CA742 /* Pods-FSCalendar_practice-FSCalendar_practiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendar_practice-FSCalendar_practiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-FSCalendar_practice-FSCalendar_practiceUITests/Pods-FSCalendar_practice-FSCalendar_practiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		34F5F0A1542FF6CB769E4409 /* Pods-FSCalendar_practice-FSCalendar_practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendar_practice-FSCalendar_practiceUITests.release.xcconfig"; path = "Target Support Files/Pods-FSCalendar_practice-FSCalendar_practiceUITests/Pods-FSCalendar_practice-FSCalendar_practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		909963686113D86CB63ACF7A /* Pods-FSCalendar_practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendar_practice.debug.xcconfig"; path = "Target Support Files/Pods-FSCalendar_practice/Pods-FSCalendar_practice.debug.xcconfig"; sourceTree = "<group>"; };
+		945F49498EB7E162C9E232AF /* Pods_FSCalendar_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCalendar_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3582EBCB602D0AC1663F846 /* Pods-FSCalendar_practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendar_practiceTests.debug.xcconfig"; path = "Target Support Files/Pods-FSCalendar_practiceTests/Pods-FSCalendar_practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB0287B5D567BFDA794D1B70 /* Pods-FSCalendar_practiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendar_practiceTests.release.xcconfig"; path = "Target Support Files/Pods-FSCalendar_practiceTests/Pods-FSCalendar_practiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5ADE66D27A2E825006E8938 /* FSCalendar_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSCalendar_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5ADE67027A2E825006E8938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5ADE67227A2E825006E8938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C5ADE67427A2E825006E8938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5ADE67727A2E825006E8938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5ADE67927A2E826006E8938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5ADE67C27A2E826006E8938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5ADE67E27A2E826006E8938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5ADE68327A2E826006E8938 /* FSCalendar_practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSCalendar_practiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5ADE68727A2E826006E8938 /* FSCalendar_practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendar_practiceTests.swift; sourceTree = "<group>"; };
+		C5ADE68D27A2E826006E8938 /* FSCalendar_practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSCalendar_practiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5ADE69127A2E826006E8938 /* FSCalendar_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendar_practiceUITests.swift; sourceTree = "<group>"; };
+		C5ADE69327A2E826006E8938 /* FSCalendar_practiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendar_practiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5ADE6A027A2EB68006E8938 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		F878D94EFA57E3FF6595771D /* Pods_FSCalendar_practice_FSCalendar_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCalendar_practice_FSCalendar_practiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5ADE66A27A2E825006E8938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53959484BCCB3E870978BD26 /* Pods_FSCalendar_practice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADE68027A2E826006E8938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE6D937E6950CEB209E10D0 /* Pods_FSCalendar_practiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADE68A27A2E826006E8938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B05B841DE13C67FD4267D6 /* Pods_FSCalendar_practice_FSCalendar_practiceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3593D6829A61DD4F7C3FC6CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				945F49498EB7E162C9E232AF /* Pods_FSCalendar_practice.framework */,
+				F878D94EFA57E3FF6595771D /* Pods_FSCalendar_practice_FSCalendar_practiceUITests.framework */,
+				13442D6B82187D4B21E2D051 /* Pods_FSCalendar_practiceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E0234C93FFBD2D4DB869BC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				909963686113D86CB63ACF7A /* Pods-FSCalendar_practice.debug.xcconfig */,
+				174A11A5CD0276C0072B8ECA /* Pods-FSCalendar_practice.release.xcconfig */,
+				32876DB2C4E7A8502E0CA742 /* Pods-FSCalendar_practice-FSCalendar_practiceUITests.debug.xcconfig */,
+				34F5F0A1542FF6CB769E4409 /* Pods-FSCalendar_practice-FSCalendar_practiceUITests.release.xcconfig */,
+				A3582EBCB602D0AC1663F846 /* Pods-FSCalendar_practiceTests.debug.xcconfig */,
+				AB0287B5D567BFDA794D1B70 /* Pods-FSCalendar_practiceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5ADE66427A2E825006E8938 = {
+			isa = PBXGroup;
+			children = (
+				C5ADE66F27A2E825006E8938 /* FSCalendar_practice */,
+				C5ADE68627A2E826006E8938 /* FSCalendar_practiceTests */,
+				C5ADE69027A2E826006E8938 /* FSCalendar_practiceUITests */,
+				C5ADE66E27A2E825006E8938 /* Products */,
+				4E0234C93FFBD2D4DB869BC7 /* Pods */,
+				3593D6829A61DD4F7C3FC6CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5ADE66E27A2E825006E8938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADE66D27A2E825006E8938 /* FSCalendar_practice.app */,
+				C5ADE68327A2E826006E8938 /* FSCalendar_practiceTests.xctest */,
+				C5ADE68D27A2E826006E8938 /* FSCalendar_practiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5ADE66F27A2E825006E8938 /* FSCalendar_practice */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADE67027A2E825006E8938 /* AppDelegate.swift */,
+				C5ADE67227A2E825006E8938 /* SceneDelegate.swift */,
+				C5ADE67427A2E825006E8938 /* ViewController.swift */,
+				C5ADE6A027A2EB68006E8938 /* TextViewController.swift */,
+				C5ADE67627A2E825006E8938 /* Main.storyboard */,
+				C5ADE67927A2E826006E8938 /* Assets.xcassets */,
+				C5ADE67B27A2E826006E8938 /* LaunchScreen.storyboard */,
+				C5ADE67E27A2E826006E8938 /* Info.plist */,
+			);
+			path = FSCalendar_practice;
+			sourceTree = "<group>";
+		};
+		C5ADE68627A2E826006E8938 /* FSCalendar_practiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADE68727A2E826006E8938 /* FSCalendar_practiceTests.swift */,
+			);
+			path = FSCalendar_practiceTests;
+			sourceTree = "<group>";
+		};
+		C5ADE69027A2E826006E8938 /* FSCalendar_practiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADE69127A2E826006E8938 /* FSCalendar_practiceUITests.swift */,
+				C5ADE69327A2E826006E8938 /* FSCalendar_practiceUITestsLaunchTests.swift */,
+			);
+			path = FSCalendar_practiceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5ADE66C27A2E825006E8938 /* FSCalendar_practice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5ADE69727A2E826006E8938 /* Build configuration list for PBXNativeTarget "FSCalendar_practice" */;
+			buildPhases = (
+				D9FC99E012BBF37313B9570D /* [CP] Check Pods Manifest.lock */,
+				C5ADE66927A2E825006E8938 /* Sources */,
+				C5ADE66A27A2E825006E8938 /* Frameworks */,
+				C5ADE66B27A2E825006E8938 /* Resources */,
+				0E70D6A5AE39170BEF6BB531 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSCalendar_practice;
+			productName = FSCalendar_practice;
+			productReference = C5ADE66D27A2E825006E8938 /* FSCalendar_practice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5ADE68227A2E826006E8938 /* FSCalendar_practiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5ADE69A27A2E826006E8938 /* Build configuration list for PBXNativeTarget "FSCalendar_practiceTests" */;
+			buildPhases = (
+				92C9BBBECB5B779CB32C8F38 /* [CP] Check Pods Manifest.lock */,
+				C5ADE67F27A2E826006E8938 /* Sources */,
+				C5ADE68027A2E826006E8938 /* Frameworks */,
+				C5ADE68127A2E826006E8938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5ADE68527A2E826006E8938 /* PBXTargetDependency */,
+			);
+			name = FSCalendar_practiceTests;
+			productName = FSCalendar_practiceTests;
+			productReference = C5ADE68327A2E826006E8938 /* FSCalendar_practiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5ADE68C27A2E826006E8938 /* FSCalendar_practiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5ADE69D27A2E826006E8938 /* Build configuration list for PBXNativeTarget "FSCalendar_practiceUITests" */;
+			buildPhases = (
+				895AA48BE681CDB27E7F7C92 /* [CP] Check Pods Manifest.lock */,
+				C5ADE68927A2E826006E8938 /* Sources */,
+				C5ADE68A27A2E826006E8938 /* Frameworks */,
+				C5ADE68B27A2E826006E8938 /* Resources */,
+				86E9664AA0173DA431F42517 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5ADE68F27A2E826006E8938 /* PBXTargetDependency */,
+			);
+			name = FSCalendar_practiceUITests;
+			productName = FSCalendar_practiceUITests;
+			productReference = C5ADE68D27A2E826006E8938 /* FSCalendar_practiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5ADE66527A2E825006E8938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C5ADE66C27A2E825006E8938 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					C5ADE68227A2E826006E8938 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C5ADE66C27A2E825006E8938;
+					};
+					C5ADE68C27A2E826006E8938 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C5ADE66C27A2E825006E8938;
+					};
+				};
+			};
+			buildConfigurationList = C5ADE66827A2E825006E8938 /* Build configuration list for PBXProject "FSCalendar_practice" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5ADE66427A2E825006E8938;
+			productRefGroup = C5ADE66E27A2E825006E8938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5ADE66C27A2E825006E8938 /* FSCalendar_practice */,
+				C5ADE68227A2E826006E8938 /* FSCalendar_practiceTests */,
+				C5ADE68C27A2E826006E8938 /* FSCalendar_practiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5ADE66B27A2E825006E8938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5ADE67D27A2E826006E8938 /* LaunchScreen.storyboard in Resources */,
+				C5ADE67A27A2E826006E8938 /* Assets.xcassets in Resources */,
+				C5ADE67827A2E825006E8938 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADE68127A2E826006E8938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADE68B27A2E826006E8938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E70D6A5AE39170BEF6BB531 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSCalendar_practice/Pods-FSCalendar_practice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSCalendar_practice/Pods-FSCalendar_practice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSCalendar_practice/Pods-FSCalendar_practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86E9664AA0173DA431F42517 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSCalendar_practice-FSCalendar_practiceUITests/Pods-FSCalendar_practice-FSCalendar_practiceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSCalendar_practice-FSCalendar_practiceUITests/Pods-FSCalendar_practice-FSCalendar_practiceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSCalendar_practice-FSCalendar_practiceUITests/Pods-FSCalendar_practice-FSCalendar_practiceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		895AA48BE681CDB27E7F7C92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSCalendar_practice-FSCalendar_practiceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92C9BBBECB5B779CB32C8F38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSCalendar_practiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FC99E012BBF37313B9570D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSCalendar_practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5ADE66927A2E825006E8938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5ADE67527A2E825006E8938 /* ViewController.swift in Sources */,
+				C5ADE67127A2E825006E8938 /* AppDelegate.swift in Sources */,
+				C5ADE67327A2E825006E8938 /* SceneDelegate.swift in Sources */,
+				C5ADE6A127A2EB68006E8938 /* TextViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADE67F27A2E826006E8938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5ADE68827A2E826006E8938 /* FSCalendar_practiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADE68927A2E826006E8938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5ADE69427A2E826006E8938 /* FSCalendar_practiceUITestsLaunchTests.swift in Sources */,
+				C5ADE69227A2E826006E8938 /* FSCalendar_practiceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5ADE68527A2E826006E8938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5ADE66C27A2E825006E8938 /* FSCalendar_practice */;
+			targetProxy = C5ADE68427A2E826006E8938 /* PBXContainerItemProxy */;
+		};
+		C5ADE68F27A2E826006E8938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5ADE66C27A2E825006E8938 /* FSCalendar_practice */;
+			targetProxy = C5ADE68E27A2E826006E8938 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5ADE67627A2E825006E8938 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5ADE67727A2E825006E8938 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5ADE67B27A2E826006E8938 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5ADE67C27A2E826006E8938 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5ADE69527A2E826006E8938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5ADE69627A2E826006E8938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5ADE69827A2E826006E8938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 909963686113D86CB63ACF7A /* Pods-FSCalendar_practice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FSCalendar_practice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hyunjung.FSCalendar-practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5ADE69927A2E826006E8938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174A11A5CD0276C0072B8ECA /* Pods-FSCalendar_practice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FSCalendar_practice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hyunjung.FSCalendar-practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5ADE69B27A2E826006E8938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3582EBCB602D0AC1663F846 /* Pods-FSCalendar_practiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hyunjung.FSCalendar-practiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSCalendar_practice.app/FSCalendar_practice";
+			};
+			name = Debug;
+		};
+		C5ADE69C27A2E826006E8938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB0287B5D567BFDA794D1B70 /* Pods-FSCalendar_practiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hyunjung.FSCalendar-practiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSCalendar_practice.app/FSCalendar_practice";
+			};
+			name = Release;
+		};
+		C5ADE69E27A2E826006E8938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32876DB2C4E7A8502E0CA742 /* Pods-FSCalendar_practice-FSCalendar_practiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hyunjung.FSCalendar-practiceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FSCalendar_practice;
+			};
+			name = Debug;
+		};
+		C5ADE69F27A2E826006E8938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F5F0A1542FF6CB769E4409 /* Pods-FSCalendar_practice-FSCalendar_practiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hyunjung.FSCalendar-practiceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FSCalendar_practice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5ADE66827A2E825006E8938 /* Build configuration list for PBXProject "FSCalendar_practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5ADE69527A2E826006E8938 /* Debug */,
+				C5ADE69627A2E826006E8938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5ADE69727A2E826006E8938 /* Build configuration list for PBXNativeTarget "FSCalendar_practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5ADE69827A2E826006E8938 /* Debug */,
+				C5ADE69927A2E826006E8938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5ADE69A27A2E826006E8938 /* Build configuration list for PBXNativeTarget "FSCalendar_practiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5ADE69B27A2E826006E8938 /* Debug */,
+				C5ADE69C27A2E826006E8938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5ADE69D27A2E826006E8938 /* Build configuration list for PBXNativeTarget "FSCalendar_practiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5ADE69E27A2E826006E8938 /* Debug */,
+				C5ADE69F27A2E826006E8938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5ADE66527A2E825006E8938 /* Project object */;
+}
