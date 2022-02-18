@@ -194,10 +194,10 @@ extension ViewController: FSCalendarDelegate, FSCalendarDelegateAppearance {
                 return "오늘"
             case "2022-02-22":
                 return "출근"
-            case "2020-06-23":
-                return "지각"
-            case "2020-06-24":
-                return "결근"
+            case "2022-02-12":
+                return "팀 회의"
+            case "2022-02-19":
+                return "정기회의"
             default:
                 return nil
             }
